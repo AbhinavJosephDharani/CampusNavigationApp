@@ -53,6 +53,7 @@ function App() {
           <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/meditation-rooms/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Meditation rooms</a></li>
         </ul>
 
+
         const navLinkStyle = {
           color: '#fff',
           textDecoration: 'none',
