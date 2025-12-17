@@ -7,57 +7,97 @@ function App() {
   const handleSearch = (e) => setSearch(e.target.value);
 
   return (
-    <div style={{ fontFamily: 'Arial, Helvetica, sans-serif', background: '#f8f9fa', minHeight: '100vh' }}>
-      <header style={{ background: '#007bff', color: '#fff', padding: '1rem 2rem', marginBottom: '2rem' }}>
-        <h1 style={{ margin: 0 }}>Campus Navigation App</h1>
-      </header>
-      <main style={{ maxWidth: 600, margin: '0 auto', background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px #0001', padding: 24 }}>
-        <section style={{ marginBottom: 24 }}>
-          <label htmlFor="search" style={{ fontWeight: 'bold', fontSize: 18 }}>Find a Room or Location:</label>
-          <input
-            id="search"
-            type="text"
-            value={search}
-            onChange={handleSearch}
-            placeholder="e.g. Room 101, Library, Cafeteria"
-            style={{ display: 'block', width: '100%', marginTop: 8, padding: 10, fontSize: 16, borderRadius: 4, border: '1px solid #ccc' }}
-          />
-          <button style={{ marginTop: 12, background: '#007bff', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: 4, fontWeight: 'bold', cursor: 'pointer' }}>
-            Search
-          </button>
-        </section>
-        <section style={{ marginBottom: 24 }}>
-          <h2 style={{ fontSize: 20, marginBottom: 8 }}>Quick Links</h2>
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <button style={quickLinkStyle}>Events</button>
-            <button style={quickLinkStyle}>Accessibility</button>
-            <button style={quickLinkStyle}>Amenities</button>
-            <button style={quickLinkStyle}>Favorites</button>
-          </div>
-        </section>
-        <section>
-          <h2 style={{ fontSize: 20, marginBottom: 8 }}>Campus Map (Coming Soon)</h2>
-          <div style={{ background: '#e9ecef', height: 180, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888' }}>
-            [Interactive Map Placeholder]
-          </div>
-        </section>
-      </main>
-      <footer style={{ textAlign: 'center', marginTop: 40, color: '#888', fontSize: 14 }}>
-        &copy; {new Date().getFullYear()} Campus Navigation App
-      </footer>
+    <div style={{ display: 'flex', minHeight: '100vh', fontFamily: 'Arial, Helvetica, sans-serif', background: '#f8f9fa' }}>
+      {/* Sidebar Navigation */}
+      <nav style={{ width: 220, background: '#003366', color: '#fff', padding: '2rem 1rem', minHeight: '100vh' }}>
+        <h2 style={{ color: '#fff', fontSize: 22, marginBottom: 32 }}>Menu</h2>
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: 17 }}>
+          <li style={navItemStyle}>Search</li>
+          <li style={navItemStyle}>Navigation</li>
+          <li style={navItemStyle}>Events</li>
+          <li style={navItemStyle}>Accessibility</li>
+          <li style={navItemStyle}>Favorites</li>
+          <li style={navItemStyle}>Amenities</li>
+          <li style={navItemStyle}>Announcements</li>
+        </ul>
+        <div style={{ marginTop: 40 }}>
+          <label htmlFor="lang" style={{ fontWeight: 'bold', fontSize: 15 }}>Language:</label>
+          <select id="lang" style={{ marginLeft: 8, padding: 4, borderRadius: 4 }}>
+            <option>English</option>
+            <option>Español</option>
+            <option>Français</option>
+            <option>हिन्दी</option>
+          </select>
+        </div>
+      </nav>
+      {/* Main Content */}
+      <div style={{ flex: 1 }}>
+        <header style={{ background: '#007bff', color: '#fff', padding: '1rem 2rem', marginBottom: '2rem' }}>
+          <h1 style={{ margin: 0 }}>Campus Navigation App</h1>
+        </header>
+        <main style={{ maxWidth: 700, margin: '0 auto', background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px #0001', padding: 24 }}>
+          {/* Search Section */}
+          <section style={{ marginBottom: 24 }}>
+            <label htmlFor="search" style={{ fontWeight: 'bold', fontSize: 18 }}>Find a Room, Office, or Location:</label>
+            <input
+              id="search"
+              type="text"
+              value={search}
+              onChange={handleSearch}
+              placeholder="e.g. Room 101, Prof. Smith, Library, Cafeteria"
+              style={{ display: 'block', width: '100%', marginTop: 8, padding: 10, fontSize: 16, borderRadius: 4, border: '1px solid #ccc' }}
+            />
+            <button style={{ marginTop: 12, background: '#007bff', color: '#fff', border: 'none', padding: '10px 20px', borderRadius: 4, fontWeight: 'bold', cursor: 'pointer' }}>
+              Search
+            </button>
+          </section>
+          {/* Stakeholder Features Placeholders */}
+          <section style={{ marginBottom: 24 }}>
+            <h2 style={{ fontSize: 20, marginBottom: 8 }}>Navigation & Accessibility</h2>
+            <ul style={{ paddingLeft: 18, color: '#333' }}>
+              <li>Indoor turn-by-turn navigation (Coming Soon)</li>
+              <li>Alternate routes during closures (Coming Soon)</li>
+              <li>Accessibility routes (Coming Soon)</li>
+            </ul>
+          </section>
+          <section style={{ marginBottom: 24 }}>
+            <h2 style={{ fontSize: 20, marginBottom: 8 }}>Events & Announcements</h2>
+            <ul style={{ paddingLeft: 18, color: '#333' }}>
+              <li>Event navigation (Coming Soon)</li>
+              <li>Share announcements, disruptions (Coming Soon)</li>
+              <li>Push notifications for closures (Coming Soon)</li>
+            </ul>
+          </section>
+          <section style={{ marginBottom: 24 }}>
+            <h2 style={{ fontSize: 20, marginBottom: 8 }}>Favorites & Amenities</h2>
+            <ul style={{ paddingLeft: 18, color: '#333' }}>
+              <li>Bookmarks/favorites tab (Coming Soon)</li>
+              <li>Highlight amenities: restrooms, water fountains, ATMs, cafés (Coming Soon)</li>
+            </ul>
+          </section>
+          <section>
+            <h2 style={{ fontSize: 20, marginBottom: 8 }}>Campus Map (Coming Soon)</h2>
+            <div style={{ background: '#e9ecef', height: 180, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888' }}>
+              [Interactive Map Placeholder]
+            </div>
+          </section>
+        </main>
+        <footer style={{ textAlign: 'center', marginTop: 40, color: '#888', fontSize: 14 }}>
+          &copy; {new Date().getFullYear()} Campus Navigation App
+        </footer>
+      </div>
     </div>
   );
 }
 
-const quickLinkStyle = {
-  background: '#f1f3f4',
-  border: '1px solid #007bff',
-  color: '#007bff',
-  borderRadius: 4,
-  padding: '8px 16px',
-  fontWeight: 'bold',
+
+const navItemStyle = {
+  marginBottom: 18,
+  padding: '8px 0',
   cursor: 'pointer',
-  fontSize: 15,
+  borderRadius: 4,
+  paddingLeft: 10,
+  transition: 'background 0.2s',
 };
 
 export default App;
