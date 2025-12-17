@@ -9,7 +9,7 @@ function App() {
   return (
     <div style={{ display: 'flex', minHeight: '100vh', fontFamily: 'Arial, Helvetica, sans-serif', background: '#f8f9fa' }}>
       {/* Sidebar Navigation */}
-      <nav style={{ width: 260, background: '#003366', color: '#fff', padding: '2rem 1rem', minHeight: '100vh', overflowY: 'auto' }}>
+      <nav style={{ width: 260, background: '#005a43', color: '#fff', padding: '2rem 1rem', minHeight: '100vh', overflowY: 'auto' }}>
         <h2 style={{ color: '#fff', fontSize: 22, marginBottom: 32 }}>Wayne State Menu</h2>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: 17 }}>
           <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/atms/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>ATMs</a></li>
@@ -54,14 +54,7 @@ function App() {
         </ul>
 
 
-        const navLinkStyle = {
-          color: '#fff',
-          textDecoration: 'none',
-          fontWeight: 'normal',
-          display: 'block',
-          width: '100%',
-          padding: '2px 0',
-        };
+        // ...existing code...
         <div style={{ marginTop: 40 }}>
           <label htmlFor="lang" style={{ fontWeight: 'bold', fontSize: 15 }}>Language:</label>
           <select id="lang" style={{ marginLeft: 8, padding: 4, borderRadius: 4 }}>
