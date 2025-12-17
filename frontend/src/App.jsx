@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 
+// UI last updated: 2025-12-17 (for redeploy test)
 function App() {
   const [search, setSearch] = useState('');
   const handleSearch = (e) => setSearch(e.target.value);
