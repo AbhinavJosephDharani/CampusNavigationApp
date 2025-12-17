@@ -9,16 +9,47 @@ function App() {
   return (
     <div style={{ display: 'flex', minHeight: '100vh', fontFamily: 'Arial, Helvetica, sans-serif', background: '#f8f9fa' }}>
       {/* Sidebar Navigation */}
-      <nav style={{ width: 220, background: '#003366', color: '#fff', padding: '2rem 1rem', minHeight: '100vh' }}>
-        <h2 style={{ color: '#fff', fontSize: 22, marginBottom: 32 }}>Menu</h2>
+      <nav style={{ width: 260, background: '#003366', color: '#fff', padding: '2rem 1rem', minHeight: '100vh', overflowY: 'auto' }}>
+        <h2 style={{ color: '#fff', fontSize: 22, marginBottom: 32 }}>Wayne State Menu</h2>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: 17 }}>
-          <li style={navItemStyle}>Search</li>
-          <li style={navItemStyle}>Navigation</li>
-          <li style={navItemStyle}>Events</li>
-          <li style={navItemStyle}>Accessibility</li>
-          <li style={navItemStyle}>Favorites</li>
-          <li style={navItemStyle}>Amenities</li>
-          <li style={navItemStyle}>Announcements</li>
+          <li style={navItemStyle}>ATMs</li>
+          <li style={navItemStyle}>Academic Departments</li>
+          <li style={navItemStyle}>Administrative Offices</li>
+          <li style={navItemStyle}>Auditoriums/Theatres & Venues</li>
+          <li style={navItemStyle}>Blue Lights</li>
+          <li style={navItemStyle}>Buildings</li>
+          <li style={navItemStyle}>Centers & Institutes</li>
+          <li style={navItemStyle}>Clinics</li>
+          <li style={navItemStyle}>Eateries</li>
+          <li style={navItemStyle}>Extension Centers</li>
+          <li style={navItemStyle}>FedEx</li>
+          <li style={navItemStyle}>Gender neutral restrooms</li>
+          <li style={navItemStyle}>Housing</li>
+          <li style={navItemStyle}>Lactation support rooms</li>
+          <li style={navItemStyle}>Libraries</li>
+          <li style={navItemStyle}>Menstrual products</li>
+          <li style={navItemStyle}>Nap Map</li>
+          <li style={navItemStyle}>OneCard Fill Locations</li>
+          <li style={navItemStyle}>Our Neighbors</li>
+          <li style={navItemStyle}>Parking - Assigned</li>
+          <li style={navItemStyle}>Parking - Staff</li>
+          <li style={navItemStyle}>Parking - Student</li>
+          <li style={navItemStyle}>Parking - Visitor</li>
+          <li style={navItemStyle}>Reflection rooms</li>
+          <li style={navItemStyle}>Retail - Bookstores</li>
+          <li style={navItemStyle}>Retail - Services & Specialty</li>
+          <li style={navItemStyle}>Retail - Shops</li>
+          <li style={navItemStyle}>Schools & Colleges</li>
+          <li style={navItemStyle}>Tours - ArtWalk</li>
+          <li style={navItemStyle}>Tours - Self-guided</li>
+          <li style={navItemStyle}>Transportation - Main Campus Shuttle</li>
+          <li style={navItemStyle}>Transportation - Medical Campus Shuttle</li>
+          <li style={navItemStyle}>Vending Machines - Beverage</li>
+          <li style={navItemStyle}>Vending Machines - Coffee</li>
+          <li style={navItemStyle}>Vending Machines - Fresh Food</li>
+          <li style={navItemStyle}>Vending Machines - Ice Cream</li>
+          <li style={navItemStyle}>Vending Machines - Snack</li>
+          <li style={navItemStyle}>Meditation rooms</li>
         </ul>
         <div style={{ marginTop: 40 }}>
           <label htmlFor="lang" style={{ fontWeight: 'bold', fontSize: 15 }}>Language:</label>
@@ -76,9 +107,20 @@ function App() {
             </ul>
           </section>
           <section>
-            <h2 style={{ fontSize: 20, marginBottom: 8 }}>Campus Map (Coming Soon)</h2>
-            <div style={{ background: '#e9ecef', height: 180, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888' }}>
-              [Interactive Map Placeholder]
+            <h2 style={{ fontSize: 20, marginBottom: 8 }}>Wayne State Interactive Campus Map</h2>
+            <div style={{ background: '#e9ecef', borderRadius: 6, overflow: 'hidden', marginBottom: 12 }}>
+              <iframe
+                title="Wayne State Interactive Map"
+                src="https://maps.wayne.edu/"
+                width="100%"
+                height="350"
+                style={{ border: 'none', borderRadius: 6 }}
+                loading="lazy"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div style={{ color: '#888', fontSize: 13, textAlign: 'center' }}>
+              <a href="https://maps.wayne.edu/locations/" target="_blank" rel="noopener noreferrer">Browse all locations & amenities</a>
             </div>
           </section>
         </main>
