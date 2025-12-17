@@ -144,6 +144,7 @@ function App() {
 }
 
 
+
 const navItemStyle = {
   marginBottom: 18,
   padding: '8px 0',
@@ -151,6 +152,15 @@ const navItemStyle = {
   borderRadius: 4,
   paddingLeft: 10,
   transition: 'background 0.2s',
+};
+
+const navLinkStyle = {
+  color: '#fff',
+  textDecoration: 'none',
+  fontWeight: 'normal',
+  display: 'block',
+  width: '100%',
+  padding: '2px 0',
 };
 
 export default App;
