@@ -12,45 +12,55 @@ function App() {
       <nav style={{ width: 260, background: '#003366', color: '#fff', padding: '2rem 1rem', minHeight: '100vh', overflowY: 'auto' }}>
         <h2 style={{ color: '#fff', fontSize: 22, marginBottom: 32 }}>Wayne State Menu</h2>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: 17 }}>
-          <li style={navItemStyle}>ATMs</li>
-          <li style={navItemStyle}>Academic Departments</li>
-          <li style={navItemStyle}>Administrative Offices</li>
-          <li style={navItemStyle}>Auditoriums/Theatres & Venues</li>
-          <li style={navItemStyle}>Blue Lights</li>
-          <li style={navItemStyle}>Buildings</li>
-          <li style={navItemStyle}>Centers & Institutes</li>
-          <li style={navItemStyle}>Clinics</li>
-          <li style={navItemStyle}>Eateries</li>
-          <li style={navItemStyle}>Extension Centers</li>
-          <li style={navItemStyle}>FedEx</li>
-          <li style={navItemStyle}>Gender neutral restrooms</li>
-          <li style={navItemStyle}>Housing</li>
-          <li style={navItemStyle}>Lactation support rooms</li>
-          <li style={navItemStyle}>Libraries</li>
-          <li style={navItemStyle}>Menstrual products</li>
-          <li style={navItemStyle}>Nap Map</li>
-          <li style={navItemStyle}>OneCard Fill Locations</li>
-          <li style={navItemStyle}>Our Neighbors</li>
-          <li style={navItemStyle}>Parking - Assigned</li>
-          <li style={navItemStyle}>Parking - Staff</li>
-          <li style={navItemStyle}>Parking - Student</li>
-          <li style={navItemStyle}>Parking - Visitor</li>
-          <li style={navItemStyle}>Reflection rooms</li>
-          <li style={navItemStyle}>Retail - Bookstores</li>
-          <li style={navItemStyle}>Retail - Services & Specialty</li>
-          <li style={navItemStyle}>Retail - Shops</li>
-          <li style={navItemStyle}>Schools & Colleges</li>
-          <li style={navItemStyle}>Tours - ArtWalk</li>
-          <li style={navItemStyle}>Tours - Self-guided</li>
-          <li style={navItemStyle}>Transportation - Main Campus Shuttle</li>
-          <li style={navItemStyle}>Transportation - Medical Campus Shuttle</li>
-          <li style={navItemStyle}>Vending Machines - Beverage</li>
-          <li style={navItemStyle}>Vending Machines - Coffee</li>
-          <li style={navItemStyle}>Vending Machines - Fresh Food</li>
-          <li style={navItemStyle}>Vending Machines - Ice Cream</li>
-          <li style={navItemStyle}>Vending Machines - Snack</li>
-          <li style={navItemStyle}>Meditation rooms</li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/atms/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>ATMs</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/academic-departments/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Academic Departments</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/administrative-offices/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Administrative Offices</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/auditoriums-venues/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Auditoriums/Theatres & Venues</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/blue-lights/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Blue Lights</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/buildings/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Buildings</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/centers-institutes/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Centers & Institutes</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/clinic/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Clinics</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/eateries/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Eateries</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/extension-centers/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Extension Centers</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/fedex/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>FedEx</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/gender-neutral-restrooms/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Gender neutral restrooms</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/housing/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Housing</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/lactation-support-room/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Lactation support rooms</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/libraries/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Libraries</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/menstrual-products/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Menstrual products</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/nap-map/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Nap Map</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/onecard-fill/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>OneCard Fill Locations</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/other/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Other</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/our-neighbors/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Our Neighbors</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/assigned-parking/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Parking - Assigned</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/staff-parking/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Parking - Staff</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/student-parking/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Parking - Student</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/guest-parking/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Parking - Visitor</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/reflection/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Reflection rooms</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/bookstores/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Retail - Bookstores</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/services/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Retail - Services & Specialty</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/shops/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Retail - Shops</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/schools-colleges/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Schools & Colleges</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/artwalk/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Tours - ArtWalk</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/self-guided/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Tours - Self-guided</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/main-campus-shuttle/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Transportation - Main Campus Shuttle</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/medical-campus-shuttle/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Transportation - Medical Campus Shuttle</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/beverage/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Vending Machines - Beverage</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/coffee/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Vending Machines - Coffee</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/fresh-food/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Vending Machines - Fresh Food</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/ice-cream/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Vending Machines - Ice Cream</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/snack/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Vending Machines - Snack</a></li>
+          <li style={navItemStyle}><a href="https://maps.wayne.edu/locations/meditation-rooms/" target="_blank" rel="noopener noreferrer" style={navLinkStyle}>Meditation rooms</a></li>
         </ul>
+
+        const navLinkStyle = {
+          color: '#fff',
+          textDecoration: 'none',
+          fontWeight: 'normal',
+          display: 'block',
+          width: '100%',
+          padding: '2px 0',
+        };
         <div style={{ marginTop: 40 }}>
           <label htmlFor="lang" style={{ fontWeight: 'bold', fontSize: 15 }}>Language:</label>
           <select id="lang" style={{ marginLeft: 8, padding: 4, borderRadius: 4 }}>
