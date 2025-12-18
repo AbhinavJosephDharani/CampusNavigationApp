@@ -3,6 +3,56 @@ import React, { useState } from 'react';
 
 // UI last updated: 2025-12-17 (for redeploy test)
 function App() {
+                                  {/* Stakeholder Features: Campus Security / Safety Teams */}
+                                  <section style={{ marginBottom: 24 }}>
+                                    <h2 style={{ fontSize: 20, marginBottom: 8 }}>Stakeholder 4 – Campus Security / Safety Teams</h2>
+                                    <ul style={{ paddingLeft: 18, color: '#333' }}>
+                                      <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Highlight campus police stations & safety services (cna-33)')}>Highlight campus police stations & safety services (cna-33)</button></li>
+                                      <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Provide contact info for departments/offices (cna-27)')}>Provide contact info for departments/offices (cna-27)</button></li>
+                                      <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('ADA compliance and accessibility routing (cna-3, cna-20, cna-25)')}>ADA compliance and accessibility routing (cna-3, cna-20, cna-25)</button></li>
+                                      <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Safety notifications for disruptions and closures (cna-15, cna-40)')}>Safety notifications for disruptions and closures (cna-15, cna-40)</button></li>
+                                    </ul>
+                                  </section>
+                        {/* Stakeholder Features: Administration */}
+                        <section style={{ marginBottom: 24 }}>
+                          <h2 style={{ fontSize: 20, marginBottom: 8 }}>Stakeholder 3 – Administration (Registrar, Facilities, Event Services)</h2>
+                          <ul style={{ paddingLeft: 18, color: '#333' }}>
+                            <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Provide building-level indoor maps (cna-2)')}>Provide building-level indoor maps (cna-2)</button></li>
+                            <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Real-time updates on construction & detours (cna-4)')}>Real-time updates on construction & detours (cna-4)</button></li>
+                            <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Display parking availability (cna-34)')}>Display parking availability (cna-34)</button></li>
+                            <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Sync with university calendar (cna-26)')}>Sync with university calendar (cna-26)</button></li>
+                            <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Emergency exits & safety stations (cna-19, cna-33)')}>Emergency exits & safety stations (cna-19, cna-33)</button></li>
+                            <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Feedback reporting to improve map accuracy (cna-39)')}>Feedback reporting to improve map accuracy (cna-39)</button></li>
+                          </ul>
+                        </section>
+              {/* Stakeholder Features: Faculty */}
+              <section style={{ marginBottom: 24 }}>
+                <h2 style={{ fontSize: 20, marginBottom: 8 }}>Stakeholder 2 – Faculty</h2>
+                <ul style={{ paddingLeft: 18, color: '#333' }}>
+                  <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Ability to search faculty offices by name (cna-8)')}>Ability to search faculty offices by name (cna-8)</button></li>
+                  <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Share announcements, events, and disruptions (cna-26, cna-40)')}>Share announcements, events, and disruptions (cna-26, cna-40)</button></li>
+                  <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Provide alternate routes for classes/events (cna-5)')}>Provide alternate routes for classes/events (cna-5)</button></li>
+                  <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Walking time/distance estimates for planning (cna-13, cna-22)')}>Walking time/distance estimates for planning (cna-13, cna-22)</button></li>
+                  <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Support for accessibility compliance (cna-20, cna-24)')}>Support for accessibility compliance (cna-20, cna-24)</button></li>
+                </ul>
+              </section>
+    // Dummy feature handler
+    const dummyFeature = (desc) => () => alert(desc + ' (dummy feature)');
+            {/* Stakeholder Features: Students */}
+            <section style={{ marginBottom: 24 }}>
+              <h2 style={{ fontSize: 20, marginBottom: 8 }}>Stakeholder 1 – Students</h2>
+              <ul style={{ paddingLeft: 18, color: '#333' }}>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Search for classrooms by room number (cna-1)')}>Search for classrooms by room number (cna-1)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Indoor turn-by-turn navigation (cna-21)')}>Indoor turn-by-turn navigation (cna-21)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Alternate routes during closures (cna-5)')}>Alternate routes during closures (cna-5)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Event navigation (cna-7, cna-26)')}>Event navigation (cna-7, cna-26)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Accessibility routes (cna-3, cna-25, cna-31)')}>Accessibility routes (cna-3, cna-25, cna-31)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Multi-language support (cna-24)')}>Multi-language support (cna-24)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Push notifications for sudden closures (cna-15)')}>Push notifications for sudden closures (cna-15)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Bookmarks/favorites tab (cna-14, cna-32)')}>Bookmarks/favorites tab (cna-14, cna-32)</button></li>
+                <li><button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={dummyFeature('Highlight amenities (restrooms, water fountains, ATMs, cafés) (cna-29, cna-30)')}>Highlight amenities (restrooms, water fountains, ATMs, cafés) (cna-29, cna-30)</button></li>
+              </ul>
+            </section>
   const [search, setSearch] = useState('');
   const handleSearch = (e) => setSearch(e.target.value);
 
@@ -112,24 +162,40 @@ function App() {
           <section style={{ marginBottom: 24 }}>
             <h2 style={{ fontSize: 20, marginBottom: 8 }}>Navigation & Accessibility</h2>
             <ul style={{ paddingLeft: 18, color: '#333' }}>
-              <li>Indoor turn-by-turn navigation (Coming Soon)</li>
-              <li>Alternate routes during closures (Coming Soon)</li>
-              <li>Accessibility routes (Coming Soon)</li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Indoor navigation feature coming soon!')}>Indoor turn-by-turn navigation</button>
+              </li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Alternate routes feature coming soon!')}>Alternate routes during closures</button>
+              </li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Accessibility routes feature coming soon!')}>Accessibility routes</button>
+              </li>
             </ul>
           </section>
           <section style={{ marginBottom: 24 }}>
             <h2 style={{ fontSize: 20, marginBottom: 8 }}>Events & Announcements</h2>
             <ul style={{ paddingLeft: 18, color: '#333' }}>
-              <li>Event navigation (Coming Soon)</li>
-              <li>Share announcements, disruptions (Coming Soon)</li>
-              <li>Push notifications for closures (Coming Soon)</li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Event navigation feature coming soon!')}>Event navigation</button>
+              </li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Announcements feature coming soon!')}>Share announcements, disruptions</button>
+              </li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Push notifications feature coming soon!')}>Push notifications for closures</button>
+              </li>
             </ul>
           </section>
           <section style={{ marginBottom: 24 }}>
             <h2 style={{ fontSize: 20, marginBottom: 8 }}>Favorites & Amenities</h2>
             <ul style={{ paddingLeft: 18, color: '#333' }}>
-              <li>Bookmarks/favorites tab (Coming Soon)</li>
-              <li>Highlight amenities: restrooms, water fountains, ATMs, cafés (Coming Soon)</li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Bookmarks/favorites feature coming soon!')}>Bookmarks/favorites tab</button>
+              </li>
+              <li>
+                <button style={{...navLinkStyle, color:'#005a43', background:'#e9ecef', border:'none', borderRadius:4, padding:'6px 12px', marginBottom:6, cursor:'pointer'}} onClick={() => alert('Amenities highlighting feature coming soon!')}>Highlight amenities: restrooms, water fountains, ATMs, cafés</button>
+              </li>
             </ul>
           </section>
           <section>
