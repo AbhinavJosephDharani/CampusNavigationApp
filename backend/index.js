@@ -1,5 +1,7 @@
+
 import express from 'express';
 import cors from 'cors';
+import { getDb } from './db.js';
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -7,8 +9,20 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
+
 app.get('/', (req, res) => {
   res.send('Campus Navigation Backend is running!');
+});
+
+// Test endpoint to verify MongoDB connection and sample data
+app.get('/api/test', async (req, res) => {
+  try {
+    const db = await getDb();
+    const sample = await db.collection('sample').find({}).limit(5).toArray();
+    res.json({ ok: true, sample });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
 });
 
 // Placeholder endpoints for core features
