@@ -5,8 +5,9 @@ const uri = process.env.MONGODB_URI;
 let client;
 let clientPromise;
 
+
 if (!global._mongoClientPromise) {
-  client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+  client = new MongoClient(uri); // No options needed for v5+
   global._mongoClientPromise = client.connect();
 }
 clientPromise = global._mongoClientPromise;
