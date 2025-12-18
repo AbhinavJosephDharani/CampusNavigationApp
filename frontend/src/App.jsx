@@ -1,6 +1,9 @@
 
 import React, { useState } from 'react';
 
+// Dummy feature handler (must be above App)
+const dummyFeature = (desc) => () => alert(desc + ' (dummy feature)');
+
 // UI last updated: 2025-12-17 (for redeploy test)
 function App() {
                                   {/* Stakeholder Features: Campus Security / Safety Teams */}
